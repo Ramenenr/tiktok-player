@@ -10,13 +10,13 @@ import VideoPlayer from './components/VideoPlayer.vue'
 
 const videoList = ref([
   {
-    url: '/videos/video1.mp4'
+    url: '/tiktok-player/videos/video1.mp4'
   },
   {
-    url: '/videos/video2.mp4'
+    url: '/tiktok-player/videos/video2.mp4'
   },
   {
-    url: '/videos/video3.mp4'
+    url: '/tiktok-player/videos/video3.mp4'
   }
 ])
 </script>
