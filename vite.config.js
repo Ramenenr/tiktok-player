@@ -9,6 +9,12 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  build: {
+    // 添加这个配置来确保正确的模块解析
+    rollupOptions: {
+      external: [],
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
