@@ -11,7 +11,11 @@ export default defineConfig({
   ],
   build: {
     rollupOptions: {
-      external: [],
+      output: {
+        manualChunks: {
+          'vue': ['vue'],
+        }
+      }
     },
     outDir: 'dist',
     assetsDir: 'assets',
