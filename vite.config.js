@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: “/tiktok-player/”,
   plugins: [
     vue(),
   ],
@@ -18,6 +19,3 @@ export default defineConfig({
     port: 5173,      // 指定端口号
   }
 })
-export default {
-  base: "https://ramenenr.github.io/tiktok-player//" // 替换为你的 GitHub 仓库名称
-};
