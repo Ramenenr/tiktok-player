@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/tiktok-player/',
+  base: '/DataFlicks/',
   plugins: [
     vue(),
   ],
@@ -29,7 +29,7 @@ export default defineConfig({
     },
   },
   server: {
-    host: '0.0.0.0', // 允许局域网访问
-    port: 5173,      // 指定端口号
+    host: '0.0.0.0', 
+    port: 5173,
   }
 })
