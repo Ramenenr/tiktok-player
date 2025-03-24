@@ -15,6 +15,9 @@ export default defineConfig({
     },
     outDir: 'dist',
     assetsDir: 'assets',
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
+    sourcemap: false
   },
   resolve: {
     alias: {
