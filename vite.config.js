@@ -10,10 +10,11 @@ export default defineConfig({
     vue(),
   ],
   build: {
-    // 添加这个配置来确保正确的模块解析
     rollupOptions: {
       external: [],
-    }
+    },
+    outDir: 'dist',
+    assetsDir: 'assets',
   },
   resolve: {
     alias: {
