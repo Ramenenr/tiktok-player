@@ -18,3 +18,6 @@ export default defineConfig({
     port: 5173,      // 指定端口号
   }
 })
+export default {
+  base: "https://ramenenr.github.io/tiktok-player//" // 替换为你的 GitHub 仓库名称
+};
