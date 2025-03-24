@@ -175,6 +175,13 @@ const startPlayback = async () => {
   if (firstVideo) {
     firstVideo.muted = false // 确保新视频不是静音的
     try {
+      // 等待视频加载完成
+      if (firstVideo.readyState < 2) {
+        await new Promise((resolve) => {
+          firstVideo.addEventListener('loadeddata', resolve, { once: true })
+          firstVideo.load()
+        })
+      }
       await firstVideo.play() // 尝试播放第一个视频
     } catch (err) {
       console.error('First video autoplay failed:', err)
