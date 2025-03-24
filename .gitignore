@@ -3,7 +3,7 @@ node_modules/
 .DS_Store
 
 # Build files
-dist/
+# dist/
 dist-ssr/
 
 # Local env files

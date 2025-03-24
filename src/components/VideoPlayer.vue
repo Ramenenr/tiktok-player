@@ -173,9 +173,9 @@ const startPlayback = async () => {
   
   const firstVideo = videoRefs.value[0]
   if (firstVideo) {
-    firstVideo.muted = false
+    firstVideo.muted = false // 确保新视频不是静音的
     try {
-      await firstVideo.play()
+      await firstVideo.play() // 尝试播放第一个视频
     } catch (err) {
       console.error('First video autoplay failed:', err)
       setTimeout(() => {
